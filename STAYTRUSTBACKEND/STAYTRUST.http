@@ -1,0 +1,6 @@
+@STAYTRUST_HostAddress = http://localhost:5233
+
+GET {{STAYTRUST_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
