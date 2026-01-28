@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1745cf;
+  --color-teal-accent: #14b8a6;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #111521;
+  --color-card-dark: #1a1e2e;
+
+  --font-display: Inter, sans-serif;
+}
+
+@layer components {
+  .glass-effect {
+    background: rgba(22, 27, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .auth-gradient {
+    background-image: radial-gradient(circle at top right, rgba(23, 69, 207, 0.15), transparent),
+      radial-gradient(circle at bottom left, rgba(20, 184, 166, 0.05), transparent);
+  }
+}
