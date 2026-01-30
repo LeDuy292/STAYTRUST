@@ -260,12 +260,12 @@ const HomePage = () => {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="transform hover:scale-110 transition-transform duration-300"
+                className="transform hover:scale-110 transition-all duration-300 bg-gray-800/70 backdrop-blur-xl border-2 border-white/20 rounded-2xl p-8 shadow-2xl shadow-black/40 hover:bg-gray-700/80 hover:border-cyan-400/60 hover:shadow-cyan-500/40"
               >
-                <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                <div className="text-5xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent drop-shadow-lg">
                   {stat.number}
                 </div>
-                <div className="text-gray-400 mt-2">{stat.label}</div>
+                <div className="text-white mt-3 font-semibold text-lg">{stat.label}</div>
               </div>
             ))}
           </div>
