@@ -1,17 +1,20 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
-import LoginPage from '../pages/Login';
-
-import VerifyEmail from '../pages/Login/VerifyEmail';
-import ForgotPassword from '../pages/Login/ForgotPassword';
-
-// Giả sử bạn có trang Home sau này
-const HomePage = () => <div className="text-white text-center pt-20">Welcome Home (Demo)</div>;
+import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import LoginPage from "../pages/Login";
+import HomePage from "../pages/Home";
+import VerifyEmail from "../pages/Login/VerifyEmail";
+import ForgotPassword from "../pages/Login/ForgotPassword";
+import LandlordDashboard from "../pages/Landlord/Dashboard";
+import PropertiesManagement from "../pages/Landlord/PropertiesManagement";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/auth" replace />,
+    element: <HomePage />,
   },
   {
     path: "/auth",
@@ -25,11 +28,19 @@ const router = createBrowserRouter([
     path: "/forgot-password",
     element: <ForgotPassword />,
   },
+  {
+    path: "/landlord",
+    element: <LandlordDashboard />,
+  },
+  {
+    path: "/landlord/properties",
+    element: <PropertiesManagement />,
+  },
   // Catch all 404
   {
     path: "*",
-    element: <div className="text-white">404 Not Found</div>
-  }
+    element: <div className="text-white">404 Not Found</div>,
+  },
 ]);
 
 const AppRoutes = () => {
