@@ -265,7 +265,9 @@ const HomePage = () => {
                 <div className="text-5xl font-bold bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent drop-shadow-lg">
                   {stat.number}
                 </div>
-                <div className="text-white mt-3 font-semibold text-lg">{stat.label}</div>
+                <div className="text-white mt-3 font-semibold text-lg">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
