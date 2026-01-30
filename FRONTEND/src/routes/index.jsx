@@ -5,17 +5,37 @@ import {
   Navigate,
 } from "react-router-dom";
 import LoginPage from "../pages/Login";
-import HomePage from "../pages/Home";
 import VerifyEmail from "../pages/Login/VerifyEmail";
 import ForgotPassword from "../pages/Login/ForgotPassword";
-import LandlordDashboard from "../pages/Landlord/Dashboard";
-import PropertiesManagement from "../pages/Landlord/PropertiesManagement";
+
+
+
+import HomePage from "../pages/Home/HomePage";
+import DiscoveryPage from "../pages/Discovery/DiscoveryPage";
+import SearchPage from "../pages/Search/SearchPage";
+import PropertyDetailPage from "../pages/PropertyDetail/PropertyDetailPage";
+import ChatPage from "../pages/Chat/ChatPage";
+import ReputationPage from "../pages/Reputation/ReputationPage";
+import ActiveRentalPage from "../pages/Rental/ActiveRentalPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
   },
+  {
+    path: "/discovery",
+    element: <DiscoveryPage />,
+  },
+  {
+    path: "/search",
+    element: <SearchPage />,
+  },
+  {
+    path: "/property/:id",
+    element: <PropertyDetailPage />,
+  },
+
   {
     path: "/auth",
     element: <LoginPage />,
@@ -29,13 +49,18 @@ const router = createBrowserRouter([
     element: <ForgotPassword />,
   },
   {
-    path: "/landlord",
-    element: <LandlordDashboard />,
+    path: "/chat",
+    element: <ChatPage />,
   },
   {
-    path: "/landlord/properties",
-    element: <PropertiesManagement />,
+    path: "/reputation",
+    element: <ReputationPage />,
   },
+  {
+    path: "/my-rental",
+    element: <ActiveRentalPage />,
+  },
+
   // Catch all 404
   {
     path: "*",
