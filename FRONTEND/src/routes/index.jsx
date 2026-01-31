@@ -8,16 +8,6 @@ import LoginPage from "../pages/Login";
 import VerifyEmail from "../pages/Login/VerifyEmail";
 import ForgotPassword from "../pages/Login/ForgotPassword";
 
-
-
-import HomePage from "../pages/Home/HomePage";
-import DiscoveryPage from "../pages/Discovery/DiscoveryPage";
-import SearchPage from "../pages/Search/SearchPage";
-import PropertyDetailPage from "../pages/PropertyDetail/PropertyDetailPage";
-import ChatPage from "../pages/Chat/ChatPage";
-import ReputationPage from "../pages/Reputation/ReputationPage";
-import ActiveRentalPage from "../pages/Rental/ActiveRentalPage";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,16 +39,14 @@ const router = createBrowserRouter([
     element: <ForgotPassword />,
   },
   {
-    path: "/chat",
-    element: <ChatPage />,
+
   },
   {
     path: "/reputation",
     element: <ReputationPage />,
   },
   {
-    path: "/my-rental",
-    element: <ActiveRentalPage />,
+
   },
 
   // Catch all 404
