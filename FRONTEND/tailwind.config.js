@@ -8,15 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary": "#1745cf",
-        "teal-accent": "#14b8a6", // Màu mới
-        "background-light": "#f6f6f8",
-        "background-dark": "#111521",
-        "card-dark": "#1a1e2e",
+        "primary": "#2dd4bf", // Teal 400
+        "background-light": "#f6f8f8",
+        "background-dark": "#010f0a", // Deep Green Black
+        "surface-dark": "#041612", // Slightly lighter green black
+        "card-dark": "#071e19", // Card background green black
       },
       fontFamily: {
-        "display": ["Inter", "sans-serif"]
-      }
+        "display": ["Manrope", "sans-serif"]
+      },
     },
   },
   plugins: [],
